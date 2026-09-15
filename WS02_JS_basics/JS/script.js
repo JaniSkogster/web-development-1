@@ -13,7 +13,7 @@ console.log(
 // Exercize 3
 const name = prompt("Mikä sinun nimesi on?");
 
-console.log(`Hello ${name}! Tervetuloa JavaScriptiin.`);
+console.log(`Hei ${name}! Tervetuloa JavaScriptiin.`);
 
 // Exercize 4
 const userAge = Number(prompt("Kuinka vanha olet?"));
@@ -28,14 +28,14 @@ function greetUser(name) {
   console.log("Hei " + name + "!");
 }
 
-greetUser("John");
+greetUser("Jani");
 greetUser("Juho");
 greetUser("Emma");
-greetUser("Alex");
+greetUser("Ossi");
 
 // Exercize 6
 const button = document.getElementById("myButton");
 
 button.addEventListener("click", function () {
-  alert("JavaScripti toimii hyvin! Opin vielä JavaScripiä");
+  alert("JavaScripti toimii hyvin! Opin vielä JavaScriptiä");
 });

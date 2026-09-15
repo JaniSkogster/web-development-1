@@ -29,6 +29,8 @@ greetUser("Juho");
 greetUser("Emma");
 greetUser("Alex");
 
-function showMessage() {
-  alert("JavaScript works fine! Im still learning");
-}
+const button = document.getElementById("myButton");
+
+button.addEventListener("click", function () {
+  alert("JavaScript works!");
+});

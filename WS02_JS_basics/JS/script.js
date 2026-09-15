@@ -20,3 +20,15 @@ if (userAge >= 18) {
   console.log("You are under 18.");
 }
 
+function greetUser(name) {
+  console.log("Hello " + name + "!");
+}
+
+greetUser("John");
+greetUser("Juho");
+greetUser("Emma");
+greetUser("Alex");
+
+function showMessage() {
+  alert("JavaScript works! Have a great day!");
+}

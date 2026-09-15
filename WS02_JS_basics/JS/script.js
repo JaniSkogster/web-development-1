@@ -1,4 +1,4 @@
-const name = "Jani";
+const userName = "Jani";
 let age = 20;
 const favouriteAnimal = "Cat";
 
@@ -30,5 +30,5 @@ greetUser("Emma");
 greetUser("Alex");
 
 function showMessage() {
-  alert("JavaScript works! Have a great day!");
+  alert("JavaScript works fine! Im still learning");
 }

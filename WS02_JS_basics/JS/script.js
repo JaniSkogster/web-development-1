@@ -11,7 +11,7 @@ console.log(
   `Hei! Minun nimeni on ${userName} ja minun lempieläimeni on ${favouriteAnimal}.`
 );
 // Exercize 3
-const name = prompt("Mikä sinun nimesi on?");
+const name = prompt("Mika sinun nimesi on?");
 
 console.log(`Hei ${name}! Tervetuloa JavaScriptiin.`);
 
@@ -37,5 +37,5 @@ greetUser("Ossi");
 const button = document.getElementById("myButton");
 
 button.addEventListener("click", function () {
-  alert("JavaScripti toimii hyvin! Opin vielä JavaScriptiä");
+  alert("JavaScripti toimii hyvin! Opin viela JavaScriptia");
 });

@@ -32,5 +32,5 @@ greetUser("Alex");
 const button = document.getElementById("myButton");
 
 button.addEventListener("click", function () {
-  alert("JavaScript works!");
+  alert("JavaScript works fine! Im still learning.");
 });

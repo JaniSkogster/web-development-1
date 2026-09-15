@@ -2,11 +2,13 @@ const userName = "Jani";
 let age = 20;
 const favouriteAnimal = "Cat";
 
-console.log(name);
+console.log(userName);
 console.log(age);
 console.log(favouriteAnimal);
 
-console.log(`Hello! My name is ${name} and my favourite animal is the ${favouriteAnimal}.`);
+console.log(
+  `Hello! My name is ${userName} and my favourite animal is the ${favouriteAnimal}.`
+);
 
 const name = prompt("What is your name?");
 
@@ -32,5 +34,5 @@ greetUser("Alex");
 const button = document.getElementById("myButton");
 
 button.addEventListener("click", function () {
-  alert("JavaScript works fine! Im still learning.");
+  alert("JavaScript works fine! I'm still learning.");
 });

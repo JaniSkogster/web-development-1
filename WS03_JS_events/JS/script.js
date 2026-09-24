@@ -44,3 +44,24 @@ const heading2 = document.querySelector("#heading2");
 heading2.addEventListener("mouseover", function () {
     console.log("Stepped over me with a mouse!");
 });
+
+
+const textarea = document.querySelector("#feedback");
+const status = document.querySelector("#status");
+const charcount = document.querySelector("#charcount");
+const preview = document.querySelector("#preview");
+
+
+textarea.addEventListener("focus", function () {
+    textarea.style.backgroundColor = "lightyellow";
+});
+
+textarea.addEventListener("blur", function () {
+    status.innerHTML = "";
+    textarea.style.backgroundColor = "white";
+});
+
+textarea.addEventListener("input", function () {
+    charcount.innerHTML = `${textarea.value.length}/200`;
+    preview.innerHTML = textarea.value;
+});

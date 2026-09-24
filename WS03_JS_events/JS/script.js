@@ -50,7 +50,7 @@ const textarea = document.querySelector("#feedback");
 const status = document.querySelector("#status");
 const charcount = document.querySelector("#charcount");
 const preview = document.querySelector("#preview");
-
+const form = document.querySelector("#feedbackForm");
 
 textarea.addEventListener("focus", function () {
     textarea.style.backgroundColor = "lightyellow";
@@ -64,4 +64,22 @@ textarea.addEventListener("blur", function () {
 textarea.addEventListener("input", function () {
     charcount.innerHTML = `${textarea.value.length}/200`;
     preview.innerHTML = textarea.value;
+});
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const feedback = textarea.value;
+
+    if (feedback.length < 10 || feedback.length > 200) {
+        status.innerHTML = "Palautteen tulee olla 10–200 merkkiä pitkä.";
+        status.style.color = "red";
+    } else {
+        status.innerHTML = "Thank you for your feedback!";
+        status.style.color = "green";
+
+        textarea.value = "";
+        document.querySelector("#charcount").innerHTML = "0/200";
+    
+    }
 });

@@ -83,3 +83,20 @@ form.addEventListener("submit", function (event) {
     
     }
 });
+
+const keyinfo = document.querySelector("#keyinfo");
+const keybox = document.querySelector("#keybox");
+
+document.addEventListener("keydown", function (event) {
+
+    console.log(event);
+
+    keyinfo.innerHTML = `
+        Näppäin: ${event.key}<br>
+        Koodi: ${event.code}
+    `;
+
+   
+    keybox.innerHTML = event.key;
+    keybox.style.fontSize = "50px";
+});

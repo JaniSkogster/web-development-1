@@ -158,51 +158,6 @@
         </li>
     </ul>
 
-    <h4>Bonustehtävä</h4>
-    <ul>
-        <li>Muuta taustaväriä näppäimen mukaan.</li>
-        <li>Lisää laskuri, joka näyttää, montako kertaa näppäintä on painettu.</li>
-        <li>Näytä, onko Shift-, Ctrl- vai Alt-näppäin painettuna.</li>
-    </ul>
-
-    <hr>
-
-    <!-- Bonusharjoitus -->
-    <h2>Bonusharjoitus: Google Maps ja sijainti</h2>
-
-    <h3>1. Google Maps ja koordinaatit</h3>
-    <p>
-        Voit avata Google Mapsin tietystä paikasta lisäämällä koordinaatit URL-osoitteeseen:
-    </p>
-    <code>https://www.google.com/maps?q=60.1699,24.9384</code>
-
-    <hr>
-
-    <h3>2. Käyttäjän sijainnin selvittäminen (Geolocation API)</h3>
-    <p>
-        Voit selvittää käyttäjän sijainnin JavaScriptin <strong>Geolocation API</strong>:n avulla.
-    </p>
-
-    <pre>
-navigator.geolocation.getCurrentPosition(
-    (position) => {
-        console.log("Latitude:", position.coords.latitude);
-        console.log("Longitude:", position.coords.longitude);
-    },
-    (error) => {
-        console.log("Sijaintia ei voitu hakea:", error.message);
-    }
-);
-    </pre>
-
-    <p>Kun koordinaatit ovat tiedossa, voit lähettää käyttäjän Google Mapsiin:</p>
-
-    <pre>
-const url = `https://www.google.com/maps?q=${lat},${lon}`;
-window.location.href = url;
-    </pre>
-
-    <p><em>Huomaa: sijainnin käyttäminen toimii yleensä vain HTTPS-sivuilla.</em></p>
-
+    
 </body>
 </html>

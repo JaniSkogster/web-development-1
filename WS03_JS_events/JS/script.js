@@ -29,3 +29,18 @@ function showTable() {
 
     document.querySelector("#tableContainer").innerHTML = table;
 }
+
+
+const heading1 = document.querySelector("#heading1");
+
+heading1.addEventListener("click", function () {
+    heading1.style.color = "red";
+    heading1.innerHTML = "Bye bye mouse!";
+});
+
+
+const heading2 = document.querySelector("#heading2");
+
+heading2.addEventListener("mouseover", function () {
+    console.log("Stepped over me with a mouse!");
+});

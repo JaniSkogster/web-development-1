@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sääsovellus</title>
+    <link rel="stylesheet" href="/WS08_XML/styles.css">
+</head>
+<body>
+
+<h1>Sääsovellus</h1>
+
+<label for="citySelect">Valitse kaupunki listalta:</label>
+
+<select id="citySelect" onchange="changeCity()">
+    <option value="Helsinki">Helsinki</option>
+    <option value="Stockholm">Tukholma</option>
+    <option value="Rome">Rooma</option>
+    <option value="New York">New York</option>
+</select>
+
+<br><br>
+
+<input type="text" id="searchInput" placeholder="Kirjoita kaupunki">
+<button onclick="searchCity()">Hae</button>
+
+<br><br>
+
+<button onclick="getWeather()">Hae data</button>
+
+<div id="weather">
+    Säätiedot näkyvät täällä.
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
